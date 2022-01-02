@@ -8,8 +8,8 @@ public class PlaySFX : MonoBehaviour
     public void PlayButtonSFX()
     {
         
-        //TODO FLO son bouton menu
-        
+        // son bouton menu
+        SoundPlayer.instance.PlaySFX(Resources.Load<AudioClip>("Sound/SFX/FitCrack"), 1f);
         
     }
     
