@@ -1822,7 +1822,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
-  m_XRTrackingOrigin: {fileID: 0}
   m_ActionsAsset: {fileID: -944628639613478452, guid: e591cdc7268936340961f81e3f5c67e8,
     type: 3}
   m_PointAction: {fileID: 0}
@@ -2001,7 +2000,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source1: {fileID: 1618828526}
   source2: {fileID: 1618828530}
-  globalVolume: 0
+  globalVolume: 0.501
 --- !u!4 &1618828528
 Transform:
   m_ObjectHideFlags: 0
@@ -2137,6 +2136,7 @@ GameObject:
   - component: {fileID: 1681623928}
   - component: {fileID: 1681623927}
   - component: {fileID: 1681623926}
+  - component: {fileID: 1681623930}
   m_Layer: 5
   m_Name: Play
   m_TagString: Untagged
@@ -2234,6 +2234,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1681623930}
+        m_TargetAssemblyTypeName: PlaySFX, Assembly-CSharp
+        m_MethodName: PlayButtonSFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1681623928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2272,6 +2284,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1681623924}
   m_CullTransparentMesh: 0
+--- !u!114 &1681623930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681623924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c37d0a835c38b8848b945652caac2fb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1684764980
 GameObject:
   m_ObjectHideFlags: 3
