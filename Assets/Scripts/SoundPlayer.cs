@@ -163,13 +163,13 @@ public class SoundPlayer : MonoBehaviour
 
     }
 
-    public void PlaySFX(SoundEffects sfx, float vol = 1f)
+    public void PlaySFX(AudioClip sfx, float vol = 1f)
     {
 
-        if (effects.ContainsKey(sfx))
+        if (sfx != null)
         {
             
-            source.PlayOneShot(effects[sfx],2*globalVolume*vol);   
+            source.PlayOneShot(sfx,2*globalVolume*vol);   
             
         }
 
